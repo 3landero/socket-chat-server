@@ -8,6 +8,7 @@ const {Server} = require('socket.io')
 app.use(cors())
 
 const PORT = process.env.PORT || 3000;
+const host = process.env.HOST || '0.0.0.0';
 
 const server= http.createServer(app);
 
